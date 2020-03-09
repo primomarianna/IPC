@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
+    <title>Instituto Previdência e Cidadania</title>
+  </head>
+  <body>
+    <header>
+      <div class = "container" >
+        <div class = "row">
+          <div class = "col-12">
+            <div class = "d-flex py-5 justify-content-between">
+              <div class = "d-flex align-items-center">
+                <a class = "mr-3" href="/todo-link-ig"><img src="images/icons/fab fa-instagram.svg" /></a>
+                <a class = "mr-3" href = "/todo-link-fb"><img src="images/icons/fab fa-facebook-f.svg" /></a>
+                <a class = "mr-3" href = "/todo-link-wpp"><img src="images/icons/fab fa-whatsapp.svg" /></a>
+              </div>
+              <img src="images/logo.svg" />
+              <div class = "d-flex align-items-center">
+                <img src="images/icons/fas fa-phone-volume.svg" class = "mr-3"/>
+                <p class = "font-weight-bold mb-0">61 3968-6929</p>
+              </div>
+            </div>
+          </div>
+          <div class = "col-11 offset-1 mb-3">
+            <ul class = "d-flex navigation p-0 m-0 justify-content-between">
+              <li><a href="#inicio">INICIO</a></li>
+              <li><a href="#consulta">CONSULTA RPV E PRECATÓRIAS</a></li>
+              <li><a href="#calculadora">CALCULADORA DA PREVIDÊNCIA</a></li>
+              <li><a href="#noticias">NOTÍCIAS</a></li>
+              <li><a href="#acoes">AÇÕES SOCIAIS</a></li>
+              <li><a href="#beneficios">BENEFÍCIOS AOS ASSOCIADOS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class = "content" id = "inicio">
+      <div class = "banner d-flex ">
+        <video autoplay muted loop id="myVideo">
+          <source src="images/video-background.mp4" type="video/mp4">
+        </video>
+        <div class = "container d-flex">
+            <div class = "col-8 d-flex flex-column justify-content-end">
+              <h1>O instituto</h1>
+              <p> O IPREV tem como missão atuar como agente transformador da sociedade, apoiar o cidadão por meio de pesquisas e 
+                promoção do acesso à informação sobre os direitos sociais e previdenciários, à inclusão digital, ao fomento de ações 
+                voltadas o exercício da cidadania, desenvolvimento social, conhecimento, integridade, transparência e rompimento 
+                das barreiras que prejudicam o acesso completo à informação.</p>
+              <div><button class = "btn btn-secondary mb-4" data-toggle="modal" data-target="#modal-saiba-mais">Saiba mais</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "container">
+        <div class = "row m-100">
+          <div class = "col-11 offset-1 d-flex align-items-center">
+            <h1 class = "text-center">Considerando a missão do IPREV é importante você saber que</h1>
+          </div>
+          <div class = "col-3">
+            <div class = "circle col-12 d-flex align-items-center justify-content-center">
+              <h1>10 mi</h1>
+            </div>
+            <div class = "col-12">
+              <h4 class = "text-center">
+                de benefícios foram requeridos no INSS no último ano
+              </h4>
+            </div>
+          </div>
+          <div class = "col-3">
+            <div class = "circle col-12 d-flex align-items-center justify-content-center">
+              <h1>4 mi</h1>
+            </div>
+            <div class = "col-12">
+              <h4 class = "text-center">
+                de benefícios indeferidos pelo INSS no último ano
+              </h4>
+            </div>
+          </div>
+          <div class = "col-3">
+            <div class = "circle col-12 d-flex align-items-center justify-content-center">
+              <h1>91%</h1>
+            </div>
+            <div class = "col-12">
+              <h4 class = "text-center">
+                dos cidadãos não recebem informação adequada do governo acerca de seus direitos
+              </h4>
+          </div>
+          </div>
+          <div class = "col-3">
+            <div class = "circle col-12 d-flex align-items-center justify-content-center">
+              <h1>412 bi</h1>
+            </div>
+            <div class = "col-12">
+              <h4 class = "text-center">
+                em média arrecadados anualmente pelo INSS
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "consulta">
+        <div class = "container" id = "consulta">
+          <div class = "col-12">
+            <h1 class = "text-center">
+              Consulta RPV e Precatórios
+            </h1>
+          </div>
+          <div class = "col-8 offset-2">
+            <p class = "small text-center">
+              RPV é uma requisição de pagamento que se faz a um ente público em razão de uma dívida reconhecida por sentença judicial transitada em julgado, que possibilita à parte vitoriosa receber o crédito da condenação independentemente da expedição de precatório, em razão de seu menor valor.
+            </p>
+          </div>
+          <div class = "col-6 offset-6">
+            <div class = "form">
+              <div class = "form-header">
+                <h3>Verifique se tem direito ao saque, preenchendo UM dos campos abaixo</h3>
+              </div>
+              <div class = "form-body">
+                <p>Precatório</p>
+                <input type = "text" />
+                <p>Requerente</p>
+                <input type = "text" />
+                <p>CPF</p>
+                <input type = "text" />
+                <p>Requerido</p>
+                <select>
+                  <option>União Federal</option>
+                </select>
+                <a class = "btn btn-primary btn-block">Consultar</a>
+              </div>
+              <div class = "success">
+                <img src="images/icons/aprovado.svg"/>
+                <h3>Tem direito ao saque</h3>
+                <a class = "btn btn-warning" href="todo-continuar">Clique aqui para continuar</a>
+              </div>
+              <div class = "fail">
+                <img src="images/icons/reprovado.svg"/>
+                <h3>Ainda não tem direito ao saque. Veja mais informações em nossa cartilha.</h3>
+                <a class = "btn btn-warning" href="todo-saiab-mais">Saiba mais</a>
+              </div>
+              <div class = "soon">
+                <h3>Em breve.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chamadas" id = "calculadora">
+        <div class = "container d-flex justify-space-evenly">
+          <div id = "cartilha-btn" class = "chamada-wrapper">
+            <div class="chamada d-flex flex-column justify-content-center align-items-center">
+              <img class = "mb-3"  src = "images/Cartinha informativa.svg" />
+              <h3 class="m-0 mb-3 p-0 text-center">Cartinha informativa</h3>
+              <p class = "mb-0 text-center">Saiba mais sobre RPV e Precatórias.</p>
+            </div>
+          </div>
+          <div id = "calculadora-btn" class = "chamada-wrapper">
+            <div class="chamada d-flex flex-column justify-content-center align-items-center">
+              <img class = "mb-3"  src = "images/Calculadora da Previdência.svg" />
+              <h3 class="m-0 mb-3 p-0 text-center">Calculadora da Previdência</h3>
+              <p class = "mb-0 text-center">Calculadora Simplificada de Tempo de Contribuição.</p>
+            </div>
+          </div>
+          <div id="empresa-btn" class = "chamada-wrapper">
+            <div class="chamada d-flex flex-column justify-content-center align-items-center">
+              <img class = "mb-3" src = "images/Empresas conveniadas.svg" />
+              <h3 class="m-0 mb-3 p-0 text-center">Benefício aos associados</h3>
+              <p class = "mb-0 text-center">Localize empresas conveniadas à IPREV.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class = "container noticias" id = "noticias">
+      <h1 class = "text-center">Notícias</h1>
+      <div class="carrossel row">
+      </div>
+    </div>
+    <div class = "container acoes" id = "acoes">
+      <h1 class = "text-center">Ações Sociais</h1>
+      <div class = "row">
+        <div class = "col-4">
+          <div>
+            <img src="images/foto1.png" />
+            <img src="images/foto4.png" />
+          </div>
+        </div>
+        <div class = "col-4">
+          <div>
+            <img src="images/foto3.png" />
+            <img src="images/foto5.png" />
+          </div>
+        </div>
+        <div class = "col-4">
+          <div>
+            <img src="images/foto2.png" />
+            <div class = "mais-fotos">
+              <a href="todo-link-fotos">
+                <h4>Nome do evento ou lugar</h4>
+                <img src="images/icons/forward.png" />
+              </a>
+              <img src="images/foto6.png" />
+            </div>
+          </div></div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class = "row">
+          <div class = "col-6">
+            <div>
+              <h1>Ainda com dúvidas? Contate-nos.</h1>
+              <ul>
+                <li>
+                  <img src="images/icons/fas fa-phone-volume-white.svg" class = "mr-3"/>
+                  <p class="font-weight-bold">61 3968-6929</p>
+                </li>
+                <li>
+                  <img src="images/icons/fab fa-whatsapp-white.svg" class = "mr-3"/>
+                  <p class="font-weight-bold">61 99999-0000</p>
+                </li>
+                <li>
+                  <img src="images/icons/email.svg" class = "mr-3"/>
+                  <p class="font-weight-bold">contato@iprev.com.br</p>  
+                </li>
+              </ul>
+            </div>
+            <img src="images/logo2.svg" />
+          </div>
+          <div class = "col-6 d-flex flex-column justify-content-between align-items-end">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15356.636187893904!2d-47.8928461!3d-15.7955655!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x239286c742093eb3!2sIPREV%20-%20DF!5e0!3m2!1spt-BR!2sbr!4v1583454664647!5m2!1spt-BR!2sbr" width="100%" height="290px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div class = "d-flex align-items-center">
+              <a class = "mr-3" href="/todo-link-ig"><img src="images/icons/fab fa-instagram-white.svg" /></a>
+              <a class = "mr-3" href = "/todo-link-fb"><img src="images/icons/fab fa-facebook-f-white.svg" /></a>
+              <a class = "mr-3" href = "/todo-link-wpp"><img src="images/icons/fab fa-whatsapp-white.svg" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class = "footer-info">
+      Todos os direitos reservados @ 2020
+    </div>
+    <div id = "modal-empresas" class="modal" tabindex="-1" role="dialog">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span style="color: white" aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h1 class="text-center">Benefício aos associados</h1>
+            <ul>
+              <li>Curso de capacitação</li>
+              <li>Palestras com entradas gratuitas</li>
+              <li>Cursos de EAD</li>
+              <li>Planejamento previdenciario</li>
+              <li>Clínicas e hospitais conveniados</li>
+              <li>Pacotes turísticos, passagens e hotéis</li>
+              <li>Assessoria juridica</li>
+              <li>Representação em todo território nacional</li>
+              <li>Descontos em farmácias e laboratórios</li>
+              <li>Academia</li>
+              <li>Desconto nos livros lançados pelo instituto</li>
+              <li>Sorteio de brindes</li>
+              <li>Seguro de vida</li>
+            </ul>
+            <!--
+            <form autocomplete="off">
+              <div class="autocomplete">
+                <input id="empresas" type="text" name="empresas" placeholder="Nome da empresa">
+                <img src = "images/icons/search.svg" />
+              </div>
+            </form>
+            <div id="nome-empresa" class = "d-flex justify-content-center align-items-center"><p class="small font-weight-bold m-0 mr-3"></p><img style="display:none" src="images/icons/check.svg" /></div> -->
+            <p class="small">Para mais informações sobre os benefícios e como se tornar um associado, entre em contato diretamente com instituto pelos canais de comunicação presentes na nossa página principal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id = "modal-saiba-mais" class="modal" tabindex="-1" role="dialog">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span style="color: white" aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h1 class="text-center">Instituto Previdência e Cidadania</h1>
+            <p><span>Os obst&aacute;culos ao acesso do direito &eacute; uma luta di&aacute;ria do cidad&atilde;o, em especial os mais vulner&aacute;veis. Na atual conjectura estatal, proteger direitos sociais &eacute; uma tarefa &aacute;rdua que exige al&eacute;m de vis&atilde;o pol&iacute;tica, uma estrutura institucional que desafie a ordem atual e deve ser caracterizada por institui&ccedil;&otilde;es sens&iacute;veis &agrave; demanda popular.</span></p>
+            
+            <p><span>A possibilidade de resposta dos indiv&iacute;duos das classes populares, especialmente os mais vulner&aacute;veis &eacute; extremamente antirrepresentativa diante da falta de representatividade. Al&eacute;m da fragilidade da popula&ccedil;&atilde;o vulner&aacute;vel h&aacute; diariamente limita&ccedil;&otilde;es impostas pela sua socializa&ccedil;&atilde;o incipiente.</span></p>
+            
+            <p><span>Atualmente, 91% da popula&ccedil;&atilde;o no Brasil n&atilde;o recebem a devida informa&ccedil;&atilde;o do governo acerca de seus direitos. Esse &eacute; um dado extremamente preocupante, pois a popula&ccedil;&atilde;o deve participar efetivamente dos rumos das contrarreformas, e a partir de ent&atilde;o chamar aten&ccedil;&atilde;o para os movimentos sociais, para um olhar mais profundo &agrave; necessidade da camada mais vulner&aacute;vel.</span></p>
+            
+            <p><span>Com intuito de propagar informa&ccedil;&atilde;o, conferir maior representatividade e maior&nbsp; grau de democracia participativa e transparente, o IPREV foi fundado para atuar como agente transformador da sociedade, apoiar o cidad&atilde;o por meio de pesquisas e promo&ccedil;&atilde;o do acesso &agrave; informa&ccedil;&atilde;o sobre os direitos sociais e previdenci&aacute;rios, &agrave; inclus&atilde;o digital, ao fomento de a&ccedil;&otilde;es voltadas o exerc&iacute;cio da cidadania, desenvolvimento social, conhecimento, integridade, transpar&ecirc;ncia e rompimento das barreiras provocadas pela burocracia estatal.</span></p>
+            
+            <p><span>Ser&aacute; um enorme prazer partilhar dessa caminhada junto com a sociedade e buscar a transforma&ccedil;&atilde;o do nosso pa&iacute;s.</span></p>
+            
+            <h4 class="text-center"><strong>ESTATUTO DO&nbsp;</strong></h4>
+            <h4 class="text-center"><strong>INSTITUTO PREVID&Ecirc;NCIA, CIDADANIA E INOVA&Ccedil;&Atilde;O</strong></h4>
+            
+            <p class="text-center"><strong>CAP&Iacute;TULO I</strong></p>
+            <p class="text-center"><strong>DA DENOMINA&Ccedil;&Atilde;O, SEDE, TEMPO DE DURA&Ccedil;&Atilde;O E OBJETIVOS</strong></p>
+            
+            <p><span>Artigo 1&ordm; - </span><strong>O&nbsp; INSTITUTO PREVID&Ecirc;NCIA, CIDADANIA E INOVA&Ccedil;&Atilde;O, </strong><span>neste estatuto designado IPREVIC ou simplesmente INSTITUTO, &eacute; uma associa&ccedil;&atilde;o civil de direito privado, sem fins econ&ocirc;micos, nem lucrativos e sem qualuqer cunho pol&iacute;tico ou partid&aacute;rio. Fundado por um grupo de advogados, educadores, t&eacute;cnicos, publicit&aacute;rios que possuem interesses em contribuir para o desenvolvimento da sociedade, por meio do desenvolvimento do cidad&atilde;o e o fortalecimento, reconhecimento e garantia dos direitos sociais.&nbsp;</span></p>
+            
+            <p><span>Par&aacute;grafo &uacute;nico - O IPREVIC tem por miss&atilde;o &ldquo;</span><strong>atuar como agente transformador da sociedade, apoiar o cidadao por meio de pesquisas e promo&ccedil;&atilde;o do acesso &agrave; informa&ccedil;&atilde;o sobre os direitos sociais e previdenci&aacute;rios, &agrave; inclus&atilde;o digital, ao fomento de a&ccedil;&otilde;es voltadas o exerc&iacute;cio da cidadania, desenvolvimento social, conhecimento, integridade e combate &agrave; corrup&ccedil;&atilde;o, transpar&ecirc;ncia e rompimento das barreiras provocadas pela burocracia estatal&rdquo;</strong></p>
+            
+            <p><span>Artigo 2&ordm; O prazo de dura&ccedil;&atilde;o do IPREVIC &eacute; indeterminado.</span></p>
+            
+            <p><span>Artigo 3&ordm; O IPREVIC atuar&aacute; em todo o territ&oacute;rio nacional e tem sede e foro no SRTVS, Quadra 701, bloco 1, sala 436, Ed&iacute;ficio Assis Chateaubriand, Asa Sul, Bras&iacute;lia, Distrito Federal, CEP: 70.340-906.</span></p>
+            
+            <p><span>Par&aacute;grafo &uacute;nico- Por delibera&ccedil;&atilde;o da Diretoria e respeitados os or&ccedil;amentos anuais, poder&atilde;o ser desenvolvidos trabalhos e/ou instaladas, transferidas ou extintas filiais, escrit&oacute;rios ou postos avan&ccedil;ados em qualquer ponto do territ&oacute;rio nacional e no exterior.</span></p>
+            
+            <p><span>Artigo 4&ordm; - O IPREVIC tem por objetivos:</span></p>
+            <ol>
+            <li><span>A promo&ccedil;&atilde;o do acesso &agrave; informa&ccedil;&atilde;o sobre direitos j&aacute; adquiridos junto &agrave; previd&ecirc;ncia social e outras institui&ccedil;&otilde;es federais, estaduais ou municipais;</span></li>
+            <li><span>Dinfundir informa&ccedil;&otilde;es sobre cidadania e seus direitos em todos os segmentos que formam a na&ccedil;&atilde;o brasileira e defender que todo cidad&atilde;o tenha seus direitos e obriga&ccedil;&otilde;es garantidos no seu dia a dia social;</span></li>
+            <li><span>Contribuir para o desenvolvimento socioecon&ocirc;mico, buscando melhorar a qualidade de vida dos us&aacute;rios dos servi&ccedil;os p&uacute;blicos, bem como da sociedade como um todo, assim como valorizar o envolvimento do voluntariado em a&ccedil;&otilde;es de solidariedade em diversas &aacute;reas de atua&ccedil;&atilde;o.</span></li>
+            <li><span>Conceber, assessorar e/ou implementar projetos de desenvolvimento comunit&aacute;rio que busquem a constru&ccedil;&atilde;o de novas pr&aacute;ticas na rela&ccedil;&atilde;o entre o Estado e a sociedade;</span></li>
+            <li><span>Apoiar, fomentar, divulgar e incentivar estudos e pesquisas dos mais variados assuntos pertinentes &agrave; seguridade social e outros temas de relev&acirc;ncia, incluindo cursos para estimular o conhecimento e desenvolvimento da cidadania em mat&eacute;ria de direitos sociais;</span></li>
+            <li><span>&nbsp;Contribuir no estudo, aconselhamento e assessoramento de entidades p&uacute;blicas ou privadas, &oacute;rg&atilde;os governamentais, judiciais e benefici&aacute;rios da previd&ecirc;ncia em quest&otilde;es pertinentes &agrave; seguridade social;</span></li>
+            <li><span>&nbsp;Fiscalizar e atuar em Tribunais Superiores, como amicus curiae, em mat&eacute;ria de interesse do INSTITUTO;</span></li>
+            <li><span>Promover o assessoramento de forma continuada, permanente e planejada, na presta&ccedil;&atilde;o de servi&ccedil;os e programas ou projetos voltados prioritariamente para o fortalecimento dos movimentos sociais e das organiza&ccedil;&otilde;es de usu&aacute;rios, forma&ccedil;&atilde;o e capacita&ccedil;&atilde;o de lideran&ccedil;as, dirigidos ao p&iacute;&uacute;blico da pol&iacute;tica de assist&ecirc;ncia social, nos termos da LOAS.</span></li>
+            <li><span>Promover a qualifica&ccedil;&atilde;o social e profissional, levantamento de estudos, pesquisas e realiza&ccedil;&atilde;o de diagn&oacute;sticos, com a finalidade de apoiar acesso &agrave; informa&ccedil;&atilde;o referente aos direitos sociais e previdenci&aacute;rios.&nbsp;</span></li>
+            <li><span>Garantir a defesa dos direitos sociais, previdenci&aacute;rios, mediante divulga&ccedil;&atilde;o das informa&ccedil;&otilde;es legislativas ;</span></li>
+            <li><span>Garantir o amplo acesso ao Poder Judici&aacute;rio e &oacute;rg&atilde;os federais para efetividade dos direitos sociais;&nbsp;</span></li>
+            <li><span>Atuar como facilitador de a&ccedil;&otilde;es e projetos voltados &agrave; inova&ccedil;&atilde;o em todo o territ&oacute;rio brasileiro;</span></li>
+            </ol>
+            
+            <ul>
+            <li><span> 1&deg; - Para os fins deste artigo, a dedica&ccedil;&atilde;o &agrave;s atividades nele previstas configura-se mediante a execu&ccedil;&atilde;o direta de projetos, programas, planos de a&ccedil;&otilde;es correlatas, por meio da doa&ccedil;&atilde;o de recursos f&iacute;sicos, humanos e/ou financeiros, ou</span><span>,</span><span> ainda</span><span>,</span><span> pela presta&ccedil;&atilde;o de servi&ccedil;os de pessoa jur&iacute;dica, ou ainda intermedi&aacute;rios de apoio a outras organiza&ccedil;&otilde;es sem fins lucrativos e a &oacute;rg&atilde;os do setor p&uacute;blico que atuem em &aacute;reas afins</span><span>.</span></li>
+            </ul>
+            
+            <ul>
+            <li><span> 2&ordm; - Na realiza&ccedil;&atilde;o dos seus objetivos, o IPREVIC </span><strong>poder&aacute; :</strong></li>
+            </ul>
+            
+            <ol>
+            <li><span>Firmar termos de parceria, conv&ecirc;nios e contratos com &oacute;rg&atilde;os, conselhos ou entes publicos e privados, com ou sem fins lucrativos, nacionais ou estrangeiros ;</span></li>
+            <li><span>Coordenar, promover, realizar ou patrocinar cursos, semin&aacute;rios, confer&ecirc;ncias, palestras, simp&oacute;sios, f&oacute;runs e congressos nas &aacute;reas afins;</span></li>
+            <li><span>Planejar, coordenar e implementar estudos e pesquisas e divulgar seus resultados por qualquer meio;</span></li>
+            <li><span>Produzir ou coordenar a produ&ccedil;&atilde;o de publica&ccedil;&otilde;es t&eacute;cnicas e did&aacute;ticas relativas a direitos sociais e previdenci&aacute;rios, cidadania e inova&ccedil;&atilde;o e temas afins, bem cono edit&aacute;-las e distribui-las;</span></li>
+            <li><span>Prestar consultoria e assessoria jur&iacute;dica aos cidad&atilde;os brasileiros, entidades p&uacute;blicas e/ou privadas, por meio de profissionais ou empresas contratadas;</span></li>
+            <li><span>Propor a&ccedil;&otilde;es coletivas, a&ccedil;&otilde;es civis p&uacute;blicas e popular na defesa dos direitos sociais, previdenci&aacute;rios, que envolvam a seguridade social e outros temas de interesse do INSTITUTO;&nbsp;</span></li>
+            </ol>
+            
+            <p><span>Artigo 5&ordm; O IPREVIC n&atilde;o distribuir&aacute; entre os seus associados, administradores, conselheiros, coordenadores, empregados ou doadores, eventuais excedentes operacionais brutos, ou l&iacute;quidos, dividendos, bonifica&ccedil;&otilde;es, participa&ccedil;&otilde;es ou parcelas do seu patrim&ocirc;nio, auferidos no exerc&iacute;cio de suas atividades e os aplicar&aacute; integralmente em a&ccedil;&otilde;es a serem desenvolvidas no territ&oacute;rio nacional e na consecu&ccedil;&atilde;o de seus objetivos e finalidades sociais.</span></p>
+            
+            <p><span>Artigo 6&ordm; - No exerc&iacute;cio das suas atividades, o IPREVIC observar&aacute; os princ&iacute;pios da legalidade, impessoalidade, moralidade, publicidade e economicidade;</span></p>
+            
+            <ul>
+            <li><span>1&ordm; - O IPREVIC ser&aacute; internamente disciplinado por um Regimento Interno, aprovado por um Conselho de Associados e, ainda, pelas Resolu&ccedil;&otilde;es Executivas emitidas pela Diretoria, que poder&atilde;o ser incorporadas ao Regimento Interno,</span> <span>se aprovado pelo Conselho de Associados.</span></li>
+            </ul>
+            
+            <ul>
+            <li><span> 2&ordm; - Com o intuito de atender aos seus objetivos, a entidade pode se organizar em tantos departamentos/setores/comiss&otilde;es, quantos necess&aacute;rios, os quais se reger&atilde;o pelas respectivas normas internas.</span></li>
+            </ul>
+            
+            <p class="text-center"><strong>DOS ASSOCIADOS</strong></p>
+            
+            <p><span>Artigo 7&ordm; - O IPREVIC &eacute; constitu&iacute;do por n&uacute;mero ilimitado de associados, com obriga&ccedil;&atilde;o de cumprir integralmente este estatuto e contribuir para sua manuten&ccedil;&atilde;o, conforme delibera&ccedil;&atilde;o do Conselho de Associados Diretoria.</span></p>
+            
+            <ul>
+            <li><span> 1 &deg; - Ser&atilde;o admitidos como associados, pessoas f&iacute;sicas ou jur&iacute;dicas, interessadas e comprometidas com os objetivos do Instituto, indicadas por pelo menos tr&ecirc;s associados do IPREVIC e aprovadas pelo Conselho de Associados</span></li>
+            </ul>
+            
+            <ul>
+            <li><span> 2&ordm; - O Instituto, atrav&eacute;s do Conselho de Associados, poder&aacute; conceder t&iacute;tulos honor&aacute;rios a pessoas que efetivamente contribuam para o seu desenvolvimento, sem necessariamente assumirem direitos e deveres associativos.</span></li>
+            </ul>
+            
+            <ul>
+            <li><span> 3&ordm; - Nenhum associado responde, solid&aacute;ria ou subsidiariamente, pelas obriga&ccedil;&otilde;es do IPREVIC;</span></li>
+            </ul>
+            
+            <p class="text-center"><strong>DO QUADRO SOCIAL</strong></p>
+            
+            <p><span>Artigo 8&ordm; - O quadro social do IPREVIC ser&aacute; constititu&iacute;do por n&uacute;mero ilimitado de associados, divididos em 3&nbsp; (tr&ecirc;s) categorias, a saber:</span></p>
+            
+            <ol>
+            <li><strong>ASSOCIADOS FUNDADORES</strong><span>: s&atilde;o aqueles que participaram da assembl&eacute;ia de Funda&ccedil;&atilde;o da entidade e assinaram a respectiva ata;</span></li>
+            <li><strong>ASSOCIADOS PATROCINADORES</strong><span>: s&atilde;o pessoas f&iacute;sicas e jur&iacute;dicas que se identificam com os ideais da associa&ccedil;&atilde;o e contribuem com recursos financeiros para manuten&ccedil;&atilde;o do Instituto;</span></li>
+            <li><strong>ASSOCIADOS EFETIVOS</strong><span>: s&atilde;o aqueles que, tendo atuado como colaboradores do Instituto, por pelo menos um ano, em programas ou projetos desenvolvidos pelo Instituto, contribuam com recursos humanos ou financeiros.</span></li>
+            </ol>
+            
+            <p><span>Artigo 9&ordm; - Todo associado, para ser admitido e manter-se em tal condi&ccedil;&atilde;o, deve reconhecer e adotar o estatuto e as normas internas do IPREVIC, zelar pelos seus objetivos, apoiar suas a&ccedil;&otilde;es e adotar os seus princ&iacute;pios, valores e normas de conduta.</span></p>
+            
+            <p><span>Artigo 10 - Todo associado pode participar de suas atividades e eventos, assim como deve zelar pela manuten&ccedil;&atilde;o e integridade do seu patrim&ocirc;nio f&iacute;sico e material.</span></p>
+            
+            <p><span>Artigo 11 - S&atilde;o direitos dos Associados Fundadores e Efetivos:</span></p>
+            <ol>
+            <li><span>Votar e ser votado para qualquer cargo da administra&ccedil;&atilde;o do IPREVIC, desde que em dia com suas obriga&ccedil;&otilde;es sociais e financeiras;</span></li>
+            <li><span>&nbsp;Utilizar os servi&ccedil;os prestados/oferecidos pelo Instituto e participar das atividades desenvolvidas, al&eacute;m de ter acesso aos livros e documentos do IPREVIC, mediante solicita&ccedil;&atilde;o;</span></li>
+            <li><span>Recorrer por escrito ao Conselho de Associados contra qualquer ato de administra&ccedil;&atilde;o, quando julgar prejudicado em algum direito;</span></li>
+            <li><span>Desligar-se livremente do IPREVIC mediante comunica&ccedil;&atilde;o escrita &agrave; Diretoria e aprova&ccedil;&atilde;o do Conselho de Associados.</span></li>
+            </ol>
+            
+            <p><span>Artigo 12 - S&atilde;o direitos dos Associados Patrocinadores:</span></p>
+            <ol>
+            <li><span>Participar das atividades desenvolvidas pelo Instituto, al&eacute;m de ter acesso aos livros e documentos do IPREVIC, mediante solicita&ccedil;&atilde;o e autoriza&ccedil;&atilde;o da Diretoria;</span></li>
+            <li><span>Recorrer por escrito ao Conselho de Associados contra qualquer ato de administra&ccedil;&atilde;o, quando julgar prejudicado o seu direito:</span></li>
+            <li><span>Desligar-se livremente do IPREVIC, mediante comunica&ccedil;&atilde;o escrita &agrave; Diretoria e aprova&ccedil;&atilde;o do Conselho de Associados.</span></li>
+            </ol>
+            
+            <p class="text-center"><strong>DA DIRETORIA</strong></p>
+            
+            <p><span>Artigo 13 &ndash; O IPREVIC ser&aacute; administrado pela Diretoria executiva, composta por:</span></p>
+            
+            <ol>
+            <li><span>Presid&ecirc;ncia;</span></li>
+            <li><span>Diretoria de Administra&ccedil;&atilde;o;</span></li>
+            <li><span>Diretoria financeira;</span></li>
+            </ol>
+            
+            <ul>
+            <li><span> 1 &deg; - A Institui&ccedil;&atilde;o n&atilde;o remunera seus dirigentes e/ou associados que atuam diretamente na gest&atilde;o executiva da entidade, exceto quando aqueles prestarem servi&ccedil;os t&eacute;cnicos espec&iacute;ficos, em programas, projetos, conv&ecirc;nios, contratos de repasse, termos de parceria ou instrumentos cong&ecirc;neres firmados entre o IPREVIC e seus parceiros.</span></li>
+            </ul>
+            
+            <p><span>Artigo 14- &Eacute; dever da diretoria:</span></p>
+            <ol>
+            <li><span>Cumprir e fazer cumprir o presente Estatuto e as demais normas internas para o funcionamento e desenvolvimento do IPREVIC;</span></li>
+            <li><span>Elaborar o planejamento das atividades e o plano or&ccedil;ament&aacute;rio at&eacute; o primeiro trimestre de cada exerc&iacute;cio para aprova&ccedil;&atilde;o pelo Conselho de Associados;</span></li>
+            <li><span>Gerir os interesses, os bens e as atividades do Instituto, podendo inclusive realizar aplica&ccedil;&otilde;es financeiras dispon&iacute;veis em institui&ccedil;&otilde;es banc&aacute;rias ;</span></li>
+            <li><span>Prestar anualmente informa&ccedil;&otilde;es de suas atividades ao Conselho de Associados atrav&eacute;s de relat&oacute;rio de atividades, balan&ccedil;o, invent&aacute;rio e documentos comprobat&oacute;rios, bem como, a qualquer tempo fornecer todas as informa&ccedil;&otilde;es que lhes sejam requeridas ;</span></li>
+            <li><span>Aprovar doa&ccedil;&otilde;es com ou sem encargos ;</span></li>
+            <li><span>Propor e/ou aplicar penalidades previstas neste estatuto ;</span></li>
+            <li><span>Representar o Instituto junto &agrave; sociedade e &oacute;rg&atilde;os governamentais.</span></li>
+            </ol>
+            
+            <ul>
+            <li><span> 1&ordm; - O mandato dos membros da Diretoria, ter&aacute; dura&ccedil;&atilde;o de 2 (dois) anos, iniciando-se com a investidura em seus cargos, o que se dar&aacute; com o registro da ata de elei&ccedil;&atilde;o, sendo assegurado o direito a uma &uacute;nica reelei&ccedil;&atilde;o.</span></li>
+            </ul>
+            
+            <ul>
+            <li><span> 2&ordm; - A Diretoria reunir-se-&aacute; ordinariamente ao menos uma vez a cada tr&ecirc;s meses, e extraordinariamente por convoca&ccedil;&atilde;o de qualquer de seus membros, e suas decis&otilde;es ser&atilde;o tomadas pela anu&ecirc;ncia da maioria.</span></li>
+            </ul>
+            
+            <ul>
+            <li><span> 3&ordm; - As decis&otilde;es da Diretoria ser&atilde;o&nbsp; formalizadas atrav&eacute;s das atas e/ou elabora&ccedil;&atilde;o&nbsp; de &mdash; Resolu&ccedil;&otilde;es Executiva.</span></li>
+            </ul>
+            
+            <ul>
+            <li><span> 4&ordm; - Para a execu&ccedil;&atilde;o de suas atribui&ccedil;&otilde;es administrativas e financeiras e dos objetivos estatut&aacute;rios do IPREVIC, a Diretoria poder&aacute; contratar equipe administrativa, empresas ou institui&ccedil;&otilde;es governamentais,&nbsp; remunerada ou n&atilde;o, observando-se os valores praticados pelo mercado na sua &aacute;rea de atua&ccedil;&atilde;o.</span></li>
+            </ul>
+            
+            <p class="text-center"><strong>DA DIRETORIA DE ADMINISTRA&Ccedil;&Atilde;O</strong></p>
+            
+            <p><span>Artigo 15- &Eacute; dever da diretoria de administra&ccedil;&atilde;o:</span></p>
+            <ol>
+            <li><span>Analisar se os projetos, conv&ecirc;nios, parcerias, contratos assinados e executados pelo Instituto est&atilde;o coerentes com sua miss&atilde;o, seus objetivos e a legisla&ccedil;&atilde;o em vigor:</span></li>
+            <li><span>Analisar se os servi&ccedil;os prestados pelo Instituto est&atilde;o coerentes com o que preconiza a Institui&ccedil;&atilde;o e no padr&atilde;o de qualidade necess&aacute;rio para manter sua idoneidade frente &agrave; sociedade;</span></li>
+            <li><span>Examinar, a qualquer tempo, os livros, contratos e documentos administrativo- financeiros;</span></li>
+            <li><span>Requisitar ao Diretor financeiro, a qualquer tempo, a documenta&ccedil;&atilde;o comprobat&oacute;ria das opera&ccedil;&otilde;es econ&ocirc;mico-financeiras realizadas pelo Instituto;</span></li>
+            <li><span>Certificar ao Conselho de Associados que a Diretoria tem cumprido e fazendo cumprir as normas, os conv&ecirc;nios, contratos, termos de parcerias e planos estabelecidos ;</span></li>
+            <li><span>&nbsp;Receber e apurar reclama&ccedil;&otilde;es dos associados, parceiros e clientes quanto aos servi&ccedil;os prestados pelo Instituto.</span></li>
+            </ol>
+            
+            <p class="text-center"><strong>DA DIRETORIA FINANCEIRA</strong></p>
+            
+            <p><span>Artigo 16- &Eacute; dever da diretoria financeira:</span></p>
+            
+            <ol>
+            <li><span>Certificar-se se existem exig&ecirc;ncias ou deveres&nbsp; a cumprir quanto &agrave;s atividades fiscais, trabalhistas ou administrativas, bem como quaisquer obriga&ccedil;&otilde;es assumidas junto a parceiros;</span></li>
+            <li><span>Controlar a emiss&atilde;o de recibos e boletos e arrecadar todas as contribui&ccedil;&otilde;es dos associados, taxas e quaisquer import&acirc;ncias devidas ao IPREVIC;</span></li>
+            <li><span>Lan&ccedil;ar em livros pr&oacute;prios, com clareza e exatid&atilde;o, as receitas e despesas do IPREVIC, mantendo em dia a escritura&ccedil;&atilde;o e organizando balancetes a serem submetidos &agrave; aprecia&ccedil;&atilde;o da diretoria executiva em suas reuni&otilde;es;</span></li>
+            <li><span>Participar de reuni&otilde;es ordin&aacute;rias e extraordin&aacute;rias do IPREVIC;</span></li>
+            <li><span>Realizar a presta&ccedil;&atilde;o de contas, ap&oacute;s o parecer do Conselho Fiscal, para a Diretoria Executiva, bimestralmente ou mensalmente, em observ&acirc;ncia aos princ&iacute;pios fundamentais de contabilidade e das Normas Brasileiras de Contabilidade.&nbsp;</span></li>
+            <li><span>Par&aacute;grafo &Uacute;nico: A presta&ccedil;&atilde;o de contas de todos os recursos e bens de origem p&uacute;blica recebidos pelas Organiza&ccedil;&otilde;es da Sociedade Civil de Interesse P&uacute;blico ser&aacute; feita conforme determina o par&aacute;grafo &uacute;nico do art. 70 da Constitui&ccedil;&atilde;o Federal.</span></li>
+            </ol>
+            <p class="text-center"><strong>DO PRESIDENTE</strong></p>
+            <p><span>Artigo 17. Ao Presidente compete:</span></p>
+            <ol>
+            <li><span>Exercer a administra&ccedil;&atilde;o geral;</span></li>
+            <li><span>&nbsp;Convocar, presidir e dirigir todas as reuni&otilde;es do Conselho Consultivo e Assembleias Gerais;</span></li>
+            <li><span>Participar de reuni&otilde;es ordin&aacute;rias e extraordin&aacute;rias;</span></li>
+            <li><span>Comparecer &agrave;s reuni&otilde;es da Diretoria e do Conselho Consultivo;</span></li>
+            <li><span>Nomear interinamente, na hip&oacute;tese de vac&acirc;ncia de algum cargo diretivo, seja administrativo ou de departamentos, se houver, em caso de impedimento tempor&aacute;rio ou definitivo do titular;</span></li>
+            <li><span>Designar porta vozes, grupos de trabalhos, nomear comiss&otilde;es especiais e encarregar Diretores de trabalhos especiais e extraordin&aacute;rios;</span></li>
+            <li><span>Rubricar todos os livros do IPREVIC, depois de verificada sua exatid&atilde;o;</span></li>
+            <li><span>Representar o IPREVIC em ju&iacute;zo ou fora dele, inclusive atrav&eacute;s de procura&ccedil;&atilde;o com fins espec&iacute;ficos;</span></li>
+            </ol>
+            
+            <p><span>Artigo 18 &ndash; Caber&aacute; a todos os diretores:</span></p>
+            
+            <ol>
+            <li><span>Organizar e dirigir todos os trabalhos que digam respeito &agrave;s atividades para as quais foram designados, obtendo, antes de tudo, a aprova&ccedil;&atilde;o da Diretoria Executiva;</span></li>
+            <li><span>Substituir, nos impedimentos tempor&aacute;rios, os demais Diretores ou mesmo desenvolver atividades ou cargos tempor&aacute;rios de acordo com as designa&ccedil;&otilde;es da Diretoria Executiva.</span></li>
+            </ol>
+            
+            <p class="text-center"><strong>DA COMPOSI&Ccedil;&Atilde;O DA DIRETORIA EXECUTIVA</strong></p>
+            
+            <p><span>Artigo 19- A Diretoria Executiva ser&aacute; composta por 01 (um) Presidente, 01 (um) Diretor Administrativo e 01 (um) Diretor Financeiro.</span></p>
+            
+            <p><span>Artigo 20- Compete &agrave; Diretoria:</span></p>
+            
+            <ol>
+            <li><span>Assuntos da administra&ccedil;&atilde;o geral;</span></li>
+            <li><span>Convocar Assembleia Geral quando entender necess&aacute;ria;</span></li>
+            <li><span>Apreciar os casos que dependam de pronta solu&ccedil;&atilde;o submetidos ao Presidente;</span></li>
+            <li><span>Apreciar o balan&ccedil;o patrimonial e demonstra&ccedil;&otilde;es financeiras apresentados pelo tesoureiro;</span></li>
+            <li><span>Apreciar os balancetes trimestrais apresentados pelo Conselho Fiscal.</span></li>
+            <li><span>Deliberar sobre a contrata&ccedil;&atilde;o e demiss&atilde;o de empregados.</span></li>
+            <li><span>Criar, fomentar e extinguir comiss&otilde;es tem&aacute;ticas para estudo e desenvolvimento de assuntos pertinentes ao objetivo do IPREVIC.</span></li>
+            </ol>
+            
+            <p><span>Artigo 20- A Diretoria Executiva reunir-se-&aacute; sempre que entender necess&aacute;rio.</span></p>
+            
+            <p class="text-center"><strong>DAS RECEITAS, PATRIM&Ocirc;NIO E PRESTA&Ccedil;&Atilde;O DE CONTAS</strong></p>
+            
+            <p><span>Artigo 21- As fontes de recursos financeiros do IPREVIC ser&atilde;o constitu&iacute;das por:</span></p>
+            <ol>
+            <li><span>Contribui&ccedil;&otilde;es associativas ;</span></li>
+            <li><span>Doa&ccedil;&otilde;es, subven&ccedil;&otilde;es,&nbsp; bens e/ou direitos de pessoas f&iacute;sicas&nbsp; ou jur&iacute;dicas, p&uacute;blicas ou privadas, nacionais ou internacionais;</span></li>
+            <li><span>Os bens e recursos do IPREVIC ser&atilde;o usados exclusivamente na realiza&ccedil;&atilde;o de seus objetivos.</span></li>
+            <li><span>O patrim&ocirc;nio do Instituto ser&aacute; constitu&iacute;do de:</span></li>
+            </ol>
+            <ol>
+            <li><span>Bens e direitos a ele transferidos os quais dever&atilde;o ser previamente examinados pela Diretoria Executiva;</span></li>
+            <li><span>Bens m&oacute;veis ou im&oacute;veis e/ou direitos adquiridos no exerc&iacute;cio de suas atividades;</span></li>
+            <li><span>Obras e publica&ccedil;&otilde;es liter&aacute;rias cujo direito autoral lhe tenha sido outorgado.</span></li>
+            </ol>
+            
+            <p><span>Artigo 22- O exerc&iacute;cio financeiro come&ccedil;a dia primeiro de janeiro e termina dia trinta e um de dezembro.</span></p>
+            
+            <p><span>Par&aacute;grafo &uacute;nico: Para planos e programas cuja execu&ccedil;&atilde;o ultrapassar um exerc&iacute;cio ser&aacute; aprovado um or&ccedil;amento global, dividindo-se as dota&ccedil;&otilde;es pelos anos de execu&ccedil;&atilde;o.</span></p>
+            
+            <p class="text-center"><strong>DO CONSELHO DE FISCALIZA&Ccedil;&Atilde;O</strong></p>
+            <p><br /><br /></p>
+            <p><span>Artigo 23 - O Conselho de fiscaliza&ccedil;&atilde;o do Instituto ser&aacute; constitu&iacute;do por 02 (dois) membros e respectivos suplentes, para um mandato de 2 (dois) anos, sendo permitida uma reelei&ccedil;&atilde;o.</span></p>
+            
+            <ul>
+            <li><span> 1&ordm; - A Assembleia Geral da diretoria que eleger os membros do Conselho eleger&aacute; no mesmo ato o 1&ordm; Titular, o 2&ordm; Titular e os suplentes.</span></li>
+            </ul>
+            
+            <ul>
+            <li><span> 2&ordm; - Em caso de vac&acirc;ncia de Titular, o mandato ser&aacute; cumprido pelo suplente na respectiva ordem de supl&ecirc;ncia. Na vac&acirc;ncia do suplente e/ou sua efetiva&ccedil;&atilde;o como titular, um novo suplente dever&aacute; ser eleito na Assembleia do Conselho de Associados seguinte.</span></li>
+            </ul>
+            
+            <ul>
+            <li><span> 3&ordm; - O Conselho fiscal reunir-se-&aacute; ordinariamente a cada 06 (seis) meses e extraordinariamente sempre que necess&aacute;rio, mediante convoca&ccedil;&atilde;o da Diretoria, ou por 2/3 (dois ter&ccedil;os) dos associados.</span></li>
+            </ul>
+            
+            <ul>
+            <li><span> 4&ordm; - Nas reuni&otilde;es do Conselho fiscal os titulares ter&atilde;o direito a voz e voto, os suplentes poder&atilde;o opinar ou propor sugest&otilde;es e pauta.</span></li>
+            </ul>
+            
+            <p><span>Artigo 24 - Compete ao Conselho fiscal&nbsp; exercer o papel de ouvidoria, acompanhamento, fiscaliza&ccedil;&atilde;o e avalia&ccedil;&atilde;o das opera&ccedil;&otilde;es, atividades e servi&ccedil;os do Instituto.</span></p>
+            <p class="text-center"><strong>DA ASSEMBLEIA GERAL:</strong></p>
+            <p><span>Artigo 25. A Assembleia Geral dever&aacute; ser constitu&iacute;da pelos associados em pleno gozo de seus direitos e a diretoria executiva do IPREVIC. Suas reuni&otilde;es ser&atilde;o ordin&aacute;rias e extraordin&aacute;rias e as decis&otilde;es que destas resultarem vincular&atilde;o a todos, ainda que ausentes.</span></p>
+            <ul>
+            <li><span> 1&ordm; &ndash; A Assembleia ser&aacute; convocada pelo Presidente ou por delibera&ccedil;&atilde;o da Diretoria Executiva, entretanto, poder&aacute; ser convocada por um n&uacute;mero m&iacute;nimo de 1/3 (um ter&ccedil;o) dos associados em condi&ccedil;&otilde;es de voto, sendo formulado o respectivo requerimento &agrave; Diretoria Executiva, a qual dever&aacute; atender no prazo de 30 (trinta) dias.</span></li>
+            <li><span> 2&ordm; &ndash; A Assembleia Geral re&uacute;ne-se em primeira convoca&ccedil;&atilde;o com a presen&ccedil;a de, no m&iacute;nimo, 50% (cinquenta por cento) mais 1 (um) dos associados com pleno direito a voto. Em segunda convoca&ccedil;&atilde;o, a Assembleia Geral realizar-se-&aacute; na mesma data, trinta minutos ap&oacute;s o hor&aacute;rio da primeira convoca&ccedil;&atilde;o, com a presen&ccedil;a de um n&uacute;mero m&iacute;nimo de 1/5 (um quinto) dos associados com pleno direito a voto e em terceira e &uacute;ltima convoca&ccedil;&atilde;o, sessenta minutos ap&oacute;s o hor&aacute;rio designado, com qualquer n&uacute;mero de associados.</span></li>
+            <li><span> 3&ordm; &ndash; A Assembleia poder&aacute; ser realizada de forma eletr&ocirc;nica atrav&eacute;s do portal do IPREVIC ou outro meio definido pela Diretoria.</span></li>
+            </ul>
+            <p><span>Artigo 26. As decis&otilde;es da Assembleia Geral ser&atilde;o tomadas pela maioria absoluta dos presentes, salvo sobre a destitui&ccedil;&atilde;o de associados eleitos, a transforma&ccedil;&atilde;o ou dissolu&ccedil;&atilde;o do IPREVIC, as altera&ccedil;&otilde;es estatut&aacute;rias, casos em que as decis&otilde;es ser&atilde;o tomadas pela aprova&ccedil;&atilde;o de dois ter&ccedil;os dos associados presentes e em pleno direito a voto.</span></p>
+            <p><span>Artigo 27. O c&aacute;lculo do qu&oacute;rum, do potencial de votos ou do resultado de vota&ccedil;&atilde;o ter&aacute; resultado sempre em n&uacute;mero inteiro e, quando fracionado, o n&uacute;mero inteiro seguinte.</span></p>
+            <p><span>Artigo 28. A Assembleia ser&aacute; presidida pelo Presidente ou por outro associado por ele designado.</span></p>
+            <ul>
+            <li><span> 1&ordm; &ndash; Nos casos de impedimento do Presidente caber&aacute; &agrave; Assembleia escolher&nbsp; quem exercer&aacute; a presid&ecirc;ncia.</span></li>
+            <li><span> 2&ordm; &ndash; Nos casos em que a Assembleia tenha sido convocada por um grupo de associados caber&aacute; a este decidir quem presidir&aacute;.</span></li>
+            </ul>
+            <p><span>Artigo 29. Compete ao presidente da Assembleia dirigir e manter a ordem dos trabalhos, decidir o empate das vota&ccedil;&otilde;es nominais e proclamar as decis&otilde;es do plen&aacute;rio.</span></p>
+            <p><span>Artigo 30.&nbsp; A Assembleia Geral Extraordin&aacute;ria poder&aacute; ser convocada para discutir e decidir qualquer assunto relevante, ainda que privativo da Assembleia Geral Ordin&aacute;ria. Compete-lhe privativamente:</span></p>
+            <ol>
+            <li><span>Decidir sobre penalidades, em &uacute;ltima inst&acirc;ncia;</span></li>
+            <li><span>Deliberar sobre emendas ou modifica&ccedil;&otilde;es deste Estatuto;</span></li>
+            <li><span>Decidir sobre os destinos do IPREVIC, sua transforma&ccedil;&atilde;o ou dissolu&ccedil;&atilde;o; e</span></li>
+            <li><span>Tratar de quaisquer outros assuntos que n&atilde;o privativos da Assembleia Geral Ordin&aacute;ria.</span></li>
+            </ol>
+            
+            <p class="text-center"><strong>DA DISSOLU&Ccedil;&Atilde;O</strong></p>
+            
+            <p><span>Artigo 31. A decis&atilde;o sobre a extin&ccedil;&atilde;o do IPREVIC compete a Assembleia Geral nos termos estatut&aacute;rios e, nesse caso, o seu patrim&ocirc;nio l&iacute;quido poder&aacute; ser transferido a outra pessoa jur&iacute;dica que tenha o mesmo objeto social, bem como poder&aacute; ser devolvido aos seus associados fundadores.</span></p>
+            
+            <p class="text-center"><strong>DAS&nbsp; DISPOSI&Ccedil;&Otilde;ES FINAIS</strong></p>
+            <p><strong>Art. 32. </strong><span>O presente Estatuto somente poder&aacute; ser modificado por Assembl&eacute;ia Geral especialmente convocada para este fim, contando com um quorum m&iacute;nimo de dois ter&ccedil;os dos associados.</span></p>
+            
+            <p><strong>Par&aacute;grafo &Uacute;nico. </strong><span>Para aprova&ccedil;&atilde;o das modifica&ccedil;&otilde;es dever&aacute; haver pronunciamento favor&aacute;vel da maioria absoluta dos associados presentes</span><strong>.</strong></p>
+            
+            <p><strong>Art. 33. </strong><span>Este Estatuto foi aprovado pelos associados fundadores, conforme ata da Assembl&eacute;ia Geral realizada </span><span>em 20 de novembro de 2019</span><span> da qual constam os nomes e qualifica&ccedil;&atilde;o dos mesmos, bem como os dos membros da primeira diretoria eleita.</span></p>
+            <p><br /><br /><br /></p>
+            <p><span>Bras&iacute;lia, 6 de novembro de 2019.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id = "modal-calculadora" class="modal" tabindex="-1" role="dialog">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span style="color: white" aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div id='cj-widget' data-src='https://calculojuridico.net.br/embedded/contribution_time_calculation_widgets/start?oid=4608'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+    <script type="text/javascript" async src='https://calculojuridico.net.br/script/contribution_time_widget.js'></script>
+  </body>
+</html>
