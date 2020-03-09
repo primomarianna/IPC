@@ -408,7 +408,10 @@ footer p {
 }
 
 #modal-saiba-mais h4{
-  margin: 0;
+}
+
+#modal-saiba-mais .modal-body{
+  padding:  64px;
 }
 
 .noticia{

@@ -41,9 +41,10 @@ function showEmpresa(data) {
 jQuery.get(
   "https://raw.githubusercontent.com/bocayuvaadvogados/IPC/master/empresas",
   function(data) {
+    console.log(data);
     var wto;
     data2 = data.split(";").filter(o => o !== "");
-    //autocomplete(document.getElementById("empresas"), data2);
+    autocomplete(document.getElementById("empresas"), data2);
     $(".autocomplete img").click(function() {
       $(".autocomplete img").attr("src", "images/icons/search.svg");
       $("#empresas").val("");
