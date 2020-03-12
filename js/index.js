@@ -41,7 +41,6 @@ function showEmpresa(data) {
 jQuery.get(
   "https://raw.githubusercontent.com/bocayuvaadvogados/IPC/master/empresas",
   function(data) {
-    console.log(data);
     var wto;
     data2 = data.split(";").filter(o => o !== "");
     autocomplete(document.getElementById("empresas"), data2);
@@ -202,7 +201,50 @@ function autocomplete(inp, arr) {
 }
 
 $(document).ready(function() {
+  var alreadyAnimated = false;
+  var myElement = document.getElementById("progress1");
+
+  var elementWatcher = scrollMonitor.create(myElement);
+
+  function animateCircle(el, postfix) {
+    var count = $(`#count${el}`);
+    $({ Counter: 0 }).animate(
+      { Counter: count.text() },
+      {
+        duration: 1000,
+        easing: "linear",
+        step: function(e) {
+          count.text(Math.ceil(e) + postfix);
+        }
+      }
+    );
+
+    var s = Snap(`#animated${el}`);
+    var progress = s.select(`#progress${el}`);
+
+    progress.attr({ strokeDasharray: "0, 251.2" });
+    Snap.animate(
+      0,
+      251.2,
+      function(value) {
+        progress.attr({ "stroke-dasharray": value + ",251.2" });
+      },
+      1000
+    );
+  }
+
+  elementWatcher.enterViewport(function() {
+    if (!alreadyAnimated) {
+      animateCircle(1, "mi");
+      animateCircle(2, "mi");
+      animateCircle(3, "");
+      animateCircle(4, "+");
+    }
+    alreadyAnimated = true;
+  });
+
   $(".circle").css("height", $(".circle").css("width"));
+  $(".circle svg").css("height", $(".circle").css("width"));
   $("#calculadora-btn").click(function() {
     $("#modal-calculadora").modal({ backdrop: "static", keyboard: false });
   });

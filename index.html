@@ -19,9 +19,9 @@
           <div class = "col-12">
             <div class = "d-flex py-5 justify-content-between">
               <div class = "d-flex align-items-center">
-                <a class = "mr-3" href="/todo-link-ig"><img src="images/icons/fab fa-instagram.svg" /></a>
-                <a class = "mr-3" href = "/todo-link-fb"><img src="images/icons/fab fa-facebook-f.svg" /></a>
-                <a class = "mr-3" href = "/todo-link-wpp"><img src="images/icons/fab fa-whatsapp.svg" /></a>
+                <a target="_blank" class = "mr-3" href="https://www.instagram.com/institutoprevidencia/"><img src="images/icons/fab fa-instagram.svg" /></a>
+                <a target="_blank" class = "mr-3" href = "https://www.facebook.com/Institutoprevidencia/"><img src="images/icons/fab fa-facebook-f.svg" /></a>
+                <a target="_blank" class = "mr-3" href = "https://api.whatsapp.com/send?phone=5561998336431&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20iPrev."><img src="images/icons/fab fa-whatsapp.svg" /></a>
               </div>
               <img src="images/logo.svg" />
               <div class = "d-flex align-items-center">
@@ -60,24 +60,40 @@
           </div>
         </div>
       </div>
-      <div class = "container">
+      <div class = "container" id = "counter-wrapper">
         <div class = "row m-100">
           <div class = "col-11 offset-1 d-flex align-items-center">
             <h1 class = "text-center">Considerando a missão do IPREV é importante você saber que</h1>
           </div>
           <div class = "col-3">
             <div class = "circle col-12 d-flex align-items-center justify-content-center">
-              <h1>10 mi</h1>
+              <svg id="animated1" viewbox="0 0 100 100">
+                <path id="progress1" stroke-width="3" stroke="#008BD2" fill="#0B2848"
+                      d="M50 10
+                        a 40 40 0 0 1 0 80
+                        a 40 40 0 0 1 0 -80">
+                </path>
+                <circle cx="50" cy="50" r="38" fill="transparent" stroke="#fff" stroke-width="1"/>
+                <text id="count1" x="50" y="50" fill="#fff" text-anchor="middle" dy="7" font-size="20">10mi</text>
+              </svg>
             </div>
             <div class = "col-12">
-              <h4 class = "text-center">
+              <h4 class = "text-center" id = "counter-item">
                 de benefícios foram requeridos no INSS no último ano
               </h4>
             </div>
           </div>
           <div class = "col-3">
             <div class = "circle col-12 d-flex align-items-center justify-content-center">
-              <h1>4 mi</h1>
+              <svg id="animated2" viewbox="0 0 100 100">
+                <path id="progress2" stroke-width="3" stroke="#008BD2" fill="#0B2848"
+                      d="M50 10
+                        a 40 40 0 0 1 0 80
+                        a 40 40 0 0 1 0 -80">
+                </path>
+                <circle cx="50" cy="50" r="38" fill="transparent" stroke="#fff" stroke-width="1"/>
+                <text id="count2" x="50" y="50" fill="#fff" text-anchor="middle" dy="7" font-size="20">4mi</text>
+              </svg>
             </div>
             <div class = "col-12">
               <h4 class = "text-center">
@@ -87,23 +103,38 @@
           </div>
           <div class = "col-3">
             <div class = "circle col-12 d-flex align-items-center justify-content-center">
-              <h1>91%</h1>
+              <svg id="animated3" viewbox="0 0 100 100">
+                <path id="progress3" stroke-width="3" stroke="#008BD2" fill="#0B2848"
+                      d="M50 10
+                        a 40 40 0 0 1 0 80
+                        a 40 40 0 0 1 0 -80">
+                </path>
+                <circle cx="50" cy="50" r="38" fill="transparent" stroke="#fff" stroke-width="1"/>
+                <text id="count3" x="50" y="50" fill="#fff" text-anchor="middle" dy="7" font-size="20">3000</text>
+              </svg>
             </div>
             <div class = "col-12">
               <h4 class = "text-center">
-                dos cidadãos não recebem informação adequada do governo acerca de seus direitos
+                pessoas auxiliadas pelo instituto
               </h4>
-          </div>
+            </div>
           </div>
           <div class = "col-3">
             <div class = "circle col-12 d-flex align-items-center justify-content-center">
-              <h1>412 bi</h1>
+              <svg id="animated4" viewbox="0 0 100 100">
+                <path id="progress4" stroke-width="3" stroke="#008BD2" fill="#0B2848"
+                      d="M50 10
+                        a 40 40 0 0 1 0 80
+                        a 40 40 0 0 1 0 -80">
+                </path>
+                <circle cx="50" cy="50" r="38" fill="transparent" stroke="#fff" stroke-width="1"/>
+                <text id="count4" x="50" y="50" fill="#fff" text-anchor="middle" dy="7" font-size="20">2000</text>
+              </svg>
             </div>
             <div class = "col-12">
               <h4 class = "text-center">
-                em média arrecadados anualmente pelo INSS
+                benefícios concedidos com o apoio do IPREV
               </h4>
-            </div>
           </div>
         </div>
       </div>
@@ -140,12 +171,12 @@
               <div class = "success">
                 <img src="images/icons/aprovado.svg"/>
                 <h3>Tem direito ao saque</h3>
-                <a class = "btn btn-warning" href="todo-continuar">Clique aqui para continuar</a>
+                <a class = "btn btn-warning" href="#" data-toggle="modal" data-target="#modal-contato" class="font-weight-bold">Entre em contato</a>
               </div>
               <div class = "fail">
                 <img src="images/icons/reprovado.svg"/>
                 <h3>Ainda não tem direito ao saque. Veja mais informações em nossa cartilha.</h3>
-                <a class = "btn btn-warning" href="todo-saiab-mais">Saiba mais</a>
+                <a class = "btn btn-warning" href="#"  data-toggle="modal" data-target="#modal-contato" class="font-weight-bold">Entre em contato</a>
               </div>
               <div class = "soon">
                 <h3>Em breve.</h3>
@@ -190,19 +221,49 @@
       <div class = "row">
         <div class = "col-4">
           <div>
-            <img src="images/foto1.png" />
-            <img src="images/foto4.png" />
+            <div class = "mais-fotos">
+              <a href="todo-link-fotos">
+                <h4>Nome do evento ou lugar</h4>
+                <img src="images/icons/forward.png" />
+              </a>
+              <img src="images/foto1.png" />
+            </div>
+            <div class = "mais-fotos">
+              <a href="todo-link-fotos">
+                <h4>Nome do evento ou lugar</h4>
+                <img src="images/icons/forward.png" />
+              </a>
+              <img src="images/foto4.png" />
+            </div>
           </div>
         </div>
         <div class = "col-4">
           <div>
-            <img src="images/foto3.png" />
-            <img src="images/foto5.png" />
+            <div class = "mais-fotos">
+              <a href="todo-link-fotos">
+                <h4>Nome do evento ou lugar</h4>
+                <img src="images/icons/forward.png" />
+              </a>
+              <img src="images/foto3.png" />
+            </div>
+            <div class = "mais-fotos">
+              <a href="todo-link-fotos">
+                <h4>Nome do evento ou lugar</h4>
+                <img src="images/icons/forward.png" />
+              </a>
+              <img src="images/foto5.png" />
+            </div>
           </div>
         </div>
         <div class = "col-4">
           <div>
-            <img src="images/foto2.png" />
+            <div class = "mais-fotos">
+              <a href="todo-link-fotos">
+                <h4>Nome do evento ou lugar</h4>
+                <img src="images/icons/forward.png" />
+              </a>
+              <img src="images/foto2.png" />
+            </div>
             <div class = "mais-fotos">
               <a href="todo-link-fotos">
                 <h4>Nome do evento ou lugar</h4>
@@ -210,7 +271,8 @@
               </a>
               <img src="images/foto6.png" />
             </div>
-          </div></div>
+          </div>
+        </div>
       </div>
     </div>
     <footer>
@@ -226,11 +288,11 @@
                 </li>
                 <li>
                   <img src="images/icons/fab fa-whatsapp-white.svg" class = "mr-3"/>
-                  <p class="font-weight-bold">61 99999-0000</p>
+                  <a target="_blank" href="https://api.whatsapp.com/send?phone=5561998336431&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20iPrev."><p class="font-weight-bold">61 99833-6431</p></a>
                 </li>
                 <li>
                   <img src="images/icons/email.svg" class = "mr-3"/>
-                  <p class="font-weight-bold">contato@iprev.com.br</p>  
+                  <p style="cursor:pointer" data-toggle="modal" data-target="#modal-contato" class="font-weight-bold">contato@iprev.com.br</p>  
                 </li>
               </ul>
             </div>
@@ -239,9 +301,9 @@
           <div class = "col-6 d-flex flex-column justify-content-between align-items-end">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15356.636187893904!2d-47.8928461!3d-15.7955655!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x239286c742093eb3!2sIPREV%20-%20DF!5e0!3m2!1spt-BR!2sbr!4v1583454664647!5m2!1spt-BR!2sbr" width="100%" height="290px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             <div class = "d-flex align-items-center">
-              <a class = "mr-3" href="/todo-link-ig"><img src="images/icons/fab fa-instagram-white.svg" /></a>
-              <a class = "mr-3" href = "/todo-link-fb"><img src="images/icons/fab fa-facebook-f-white.svg" /></a>
-              <a class = "mr-3" href = "/todo-link-wpp"><img src="images/icons/fab fa-whatsapp-white.svg" /></a>
+              <a target="_blank" class = "mr-3" href="https://www.instagram.com/institutoprevidencia/"><img src="images/icons/fab fa-instagram-white.svg" /></a>
+              <a target="_blank" class = "mr-3" href = "https://www.facebook.com/Institutoprevidencia/"><img src="images/icons/fab fa-facebook-f-white.svg" /></a>
+              <a target="_blank" class = "mr-3" href = "https://api.whatsapp.com/send?phone=5561998336431&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20iPrev."><img src="images/icons/fab fa-whatsapp-white.svg" /></a>
             </div>
           </div>
         </div>
@@ -285,6 +347,39 @@
               </ul>
             </div>
             <p class="font-weight-bold">Para mais informações sobre os benefícios e como se tornar um associado, entre em contato diretamente com instituto pelos canais de comunicação presentes na nossa página principal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id = "modal-contato" class="modal" tabindex="-1" role="dialog">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span style="color: white" aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h1 class="text-center">Entre em Contato</h1>
+            <div>
+              <form autocomplete="off">
+                <div class="form-group">
+                  <label for="telefone">Nome</label>
+                  <input type="text" class="form-control" id="telefone" placeholder="Nome">
+                </div>
+                <div class="form-group">
+                  <label for="telefone">Telefone</label>
+                  <input type="text" class="form-control" id="telefone" placeholder="(99)99999-9999">
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+                </div>
+                <div class="form-group">
+                  <label for="mensagem">Mensagem</label>
+                  <textarea class="form-control" id="mensagem" rows="3"></textarea>
+                </div>
+                <button style="float: right" type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -611,6 +706,8 @@
     <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scrollMonitor.js"></script>
+    <script type="text/javascript" src="js/snap.svg-min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="lib/slick/slick.min.js"></script>
     <script type="text/javascript" async src='https://calculojuridico.net.br/script/contribution_time_widget.js'></script>
