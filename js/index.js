@@ -77,10 +77,10 @@ jQuery.get(
 const carouselItem = data => {
   return `
   <div class = "col-12 row noticia-wrapper">
-    <div class = "col-7">
+    <div class = "d-none d-sm-block col-sm-7">
       <img src="${data[3] !== "" ? data[3] : "images/logo-dark.svg"}" />
     </div>
-    <div class = "col-6 noticia">
+    <div class = "col-10 offset-1 offset-sm-0 col-sm-6 noticia">
       <div class = "noticia-background">
         <div>
           <h3>${data[0]}</h3>

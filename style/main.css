@@ -24,6 +24,8 @@ h1 {
   font-size: 3.252em;
 }
 
+
+
 h2 {font-size: 2.569em;}
 
 h3 {font-size: 2.029em;}
@@ -33,7 +35,6 @@ h4 {font-size: 1.603em;}
 h5 {font-size: 1.266em;}
 
 small, .text_small {font-size: 0.79em;}
-
 ul.navigation li{
   list-style: none;
 }
@@ -547,4 +548,50 @@ button.close{
   /*when navigating through the items using the arrow keys:*/
   background-color: DodgerBlue !important;
   color: #ffffff;
+}
+
+.nav-link{
+  padding: .5rem;
+  color: #000;
+  font-size: 14px;
+}
+
+
+
+@media (max-width: 575.98px) { 
+  h1{
+    font-size: 2.5em;
+  }
+  h2{
+    font-size: 2.25em;
+
+  }
+  .consulta{
+    background: none;
+  }
+  .noticia{
+        position: initial;
+        z-index: 2;
+        right: unset;
+        top: unset;
+        display: flex;
+        padding: 0;
+        align-items: space-around;
+  }
+  .slick-arrow{
+    padding: 0;
+  }
+  #counter-wrapper{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .carrossel button{
+    padding: 0;
+  }
+  .carrossel button img{
+    width: 24px;
+
+  }
+  
 }
