@@ -604,6 +604,15 @@ button.close{
   #modal-empresas .modal-dialog .modal-content, #modal-saiba-mais .modal-body, #modal-contato .modal-body{
     padding: 40px 32px;
   }
+  #counter-wrapper h4{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  .m-100{
+    margin-bottom: 40px;
+  }
+
 }
 
 b, strong{

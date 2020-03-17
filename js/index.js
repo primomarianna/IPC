@@ -237,8 +237,8 @@ $(document).ready(function() {
     if (!alreadyAnimated) {
       animateCircle(1, "mi");
       animateCircle(2, "mi");
-      animateCircle(3, "");
-      animateCircle(4, "+");
+      animateCircle(3, "%");
+      animateCircle(4, "bi");
     }
     alreadyAnimated = true;
   });
