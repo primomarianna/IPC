@@ -593,5 +593,18 @@ button.close{
     width: 24px;
 
   }
-  
+  .modal-dialog{
+    height: calc(100% - 24px);
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  .modal-content{
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  #modal-empresas .modal-dialog .modal-content, #modal-saiba-mais .modal-body, #modal-contato .modal-body{
+    padding: 40px 32px;
+  }
 }
