@@ -407,9 +407,6 @@ footer p {
   position: relative;
 }
 
-#modal-saiba-mais h4{
-}
-
 #modal-saiba-mais .modal-body, #modal-contato .modal-body{
   padding:  64px;
 }
@@ -607,4 +604,8 @@ button.close{
   #modal-empresas .modal-dialog .modal-content, #modal-saiba-mais .modal-body, #modal-contato .modal-body{
     padding: 40px 32px;
   }
+}
+
+b, strong{
+  font-weight: bold;
 }
