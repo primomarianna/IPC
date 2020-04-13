@@ -303,6 +303,24 @@ a.btn.btn-warning:hover{
   margin-bottom: 30px;
 }
 
+.acoes .row .col-4 .mais-fotos > img{
+  object-fit: cover;
+  width: 100%;
+  object-position: center center;
+}
+
+.acoes .row .col-4:nth-child(odd) .mais-fotos:first-child >img,
+.acoes .row .col-4:nth-child(even) .mais-fotos:last-child >img{
+  max-height: 262px;
+  min-height: 262px;
+}
+
+.acoes .row .col-4:nth-child(odd) .mais-fotos:last-child >img,
+.acoes .row .col-4:nth-child(even) .mais-fotos:first-child >img{
+  max-height: 350px;
+  min-height: 350px;
+}
+
 .slick-slide img{
   width: 554px;
   height: 554px;
