@@ -273,7 +273,7 @@ $(document).ready(function () {
     });
   });
 
-  function verifyFields(name, number, cpf, phone, mail) {
+  function verifyFields(name, phone, mail) {
     name === ""
       ? $("#formName").addClass("error")
       : $("#formName").removeClass("error");
@@ -293,9 +293,8 @@ $(document).ready(function () {
     const cpf = $("#formCPF").val();
     const phone = $("#formPhone").val();
     const mail = $("#formMail").val();
-    if (verifyFields(name, number, cpf, phone, mail)) {
+    if (verifyFields(name, phone, mail)) {
       var mailData = {
-        dest: "enggabrielalbino@gmail.com",
         nome: name,
         codigo: number,
         requerido: "",
