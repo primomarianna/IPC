@@ -295,7 +295,6 @@ $(document).ready(function () {
     const mail = $("#formMail").val();
     if (verifyFields(name, phone, mail)) {
       var mailData = {
-        dest: "mariannaterto@gmail.com",
         nome: name,
         codigo: number,
         requerido: "",
