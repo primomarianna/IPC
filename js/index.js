@@ -289,7 +289,6 @@ $(document).ready(function () {
   $("#formSubmit").on("click", function (e) {
     e.preventDefault();
     const name = $("#formName").val();
-    const number = $("#formNumber").val();
     const cpf = $("#formCPF").val();
     const phone = $("#formPhone").val();
     const mail = $("#formMail").val();
@@ -298,16 +297,12 @@ $(document).ready(function () {
       var requestUrl =
         "https://iprev-281923.rj.r.appspot.com/buscanome?nome=" +
         encodeURI(name);
-      if (number !== "") {
-        requestUrl =
-          "https://iprev-281923.rj.r.appspot.com/buscacodigo?codigo=" + number;
-      }
       var mailData = {
         nome: name,
-        codigo: number,
         requerido: "",
         assunto: "LOG DE CONSULTA - SITE IPREV",
         telefone: phone,
+        codigo: "",
         email: mail,
         cpf,
       };
@@ -321,23 +316,27 @@ $(document).ready(function () {
       $.get(requestUrl, function (data) {
         mailData.resposta = dataExists;
         data.exists ? setFormSuccess() : setFormFail();
+        callLeadRequests();
       });
-      $.ajax({
-        url: "https://iprev-281923.rj.r.appspot.com/email/sendmail",
-        type: "POST",
-        data: JSON.stringify(mailData),
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
-        success: function (data) {},
-      });
-      $.ajax({
-        url: "https://iprev-281923.rj.r.appspot.com/clientes/insert",
-        type: "PUT",
-        data: JSON.stringify(storageData),
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
-        success: function () {},
-      });
+
+      const callLeadRequests = () => {
+        $.ajax({
+          url: "https://iprev-281923.rj.r.appspot.com/email/sendmail",
+          type: "POST",
+          data: JSON.stringify(mailData),
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success: function (data) {},
+        });
+        $.ajax({
+          url: "https://iprev-281923.rj.r.appspot.com/clientes/insert",
+          type: "PUT",
+          data: JSON.stringify(storageData),
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success: function () {},
+        });
+      };
     }
   });
 });
