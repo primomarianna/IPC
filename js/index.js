@@ -293,7 +293,15 @@ $(document).ready(function () {
     const cpf = $("#formCPF").val();
     const phone = $("#formPhone").val();
     const mail = $("#formMail").val();
+    var dataExists = false;
     if (verifyFields(name, phone, mail)) {
+      var requestUrl =
+        "https://iprev-281923.rj.r.appspot.com/buscanome?nome=" +
+        encodeURI(name);
+      if (number !== "") {
+        requestUrl =
+          "https://iprev-281923.rj.r.appspot.com/buscacodigo?codigo=" + number;
+      }
       var mailData = {
         nome: name,
         codigo: number,
@@ -309,17 +317,11 @@ $(document).ready(function () {
         email: mail,
         telefone: phone,
       };
-      var requestUrl =
-        "https://iprev-281923.rj.r.appspot.com/buscanome?nome=" +
-        encodeURI(name);
-      if (number !== "") {
-        requestUrl =
-          "https://iprev-281923.rj.r.appspot.com/buscacodigo?codigo=" + number;
-      }
+
       $.get(requestUrl, function (data) {
+        mailData.resposta = dataExists;
         data.exists ? setFormSuccess() : setFormFail();
       });
-      console.log(mailData, storageData);
       $.ajax({
         url: "https://iprev-281923.rj.r.appspot.com/email/sendmail",
         type: "POST",
