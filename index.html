@@ -164,25 +164,26 @@
               </div>
               <div class = "form-body">
                 <p>Nome Completo <span style="color: red">*</span></p>
-                <input type = "text" />
+                <input type = "text" id = "formName"/>
+                <p>Número do RPV</p>
+                <input type = "number" id = "formNumber"/>
+                <p>CPF</p>
+                <input type = "number" id = "formCPF" />
                 <p>Telefone <span style="color: red">*</span></p>
-                <input type = "text" placeholder="(99)99999-9999" />
-                <p>CPF <span style="color: red">*</span></p>
-                <input type = "text" />
-                <a class = "btn btn-primary btn-block">Consultar</a>
+                <input type = "number" id = "formPhone" placeholder="(99)99999-9999" />
+                <p>E-mail <span style="color: red">*</span></p>
+                <input type = "text" id = "formMail" />
+                <a id = "formSubmit" class = "btn btn-primary btn-block">Consultar</a>
               </div>
               <div class = "success">
                 <img src="images/icons/aprovado.svg"/>
                 <h3>Tem direito ao saque</h3>
-                <a class = "btn btn-warning" href="#" data-toggle="modal" data-target="#modal-contato" class="font-weight-bold">Entre em contato</a>
+                <a class = "btn btn-warning" href="https://api.whatsapp.com/send?phone=5561998336431&text=Ol%C3%A1%2C%20meu%20nome%20consta%20na%20lista%20de%20recebimentos%20de%20RPV%20do%20TRF1.%20Gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es.%20Como%20devo%20prosseguir%3F" target="_blank" class="font-weight-bold">Entre em contato</a>
               </div>
               <div class = "fail">
                 <img src="images/icons/reprovado.svg"/>
                 <h3>Ainda não tem direito ao saque. Veja mais informações em nossa cartilha.</h3>
-                <a class = "btn btn-warning" href="#"  data-toggle="modal" data-target="#modal-contato" class="font-weight-bold">Entre em contato</a>
-              </div>
-              <div class = "soon">
-                <h3>Em breve.</h3>
+                <a class = "btn btn-warning" href="https://api.whatsapp.com/send?phone=5561998336431&text=Ol%C3%A1%2C%20meu%20nome%20n%C3%A3o%20consta%20na%20lista%20de%20recebimentos%20de%20RPV%20do%20TRF1.%20Gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20outros%20direitos%20previdenci%C3%A1rios." target="_blank" class="font-weight-bold">Entre em contato</a>
               </div>
             </div>
           </div>

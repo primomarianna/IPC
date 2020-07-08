@@ -1,18 +1,18 @@
 jQuery.get(
   "https://raw.githubusercontent.com/bocayuvaadvogados/IPC/master/noticias",
-  function(data) {
-    data2 = data.split("\n").filter(o => o !== "");
-    data2.forEach(function(item, i) {
+  function (data) {
+    data2 = data.split("\n").filter((o) => o !== "");
+    data2.forEach(function (item, i) {
       if (i === 0) return;
       $(".carrossel")[0].innerHTML += carouselItem(item.split(";"));
     });
-    $(document).ready(function() {
+    $(document).ready(function () {
       $(".carrossel").slick({
         nextArrow:
           '<button class = "col-1" type="button"><img src="images/icons/controle-right.svg"/></button>',
         prevArrow:
           '<button class = "col-1" type="button"><img src="images/icons/controle-left.svg"/></button>',
-        fade: true
+        fade: true,
       });
     });
   }
@@ -21,11 +21,7 @@ jQuery.get(
 function showEmpresa(data) {
   if (
     data.find(
-      empresa =>
-        empresa.toLowerCase() ===
-        $("#empresas")
-          .val()
-          .toLowerCase()
+      (empresa) => empresa.toLowerCase() === $("#empresas").val().toLowerCase()
     )
   ) {
     $("#nome-empresa p").text($("#empresas").val());
@@ -40,16 +36,16 @@ function showEmpresa(data) {
 
 jQuery.get(
   "https://raw.githubusercontent.com/bocayuvaadvogados/IPC/master/empresas",
-  function(data) {
+  function (data) {
     var wto;
-    data2 = data.split(";").filter(o => o !== "");
+    data2 = data.split(";").filter((o) => o !== "");
     autocomplete(document.getElementById("empresas"), data2);
-    $(".autocomplete img").click(function() {
+    $(".autocomplete img").click(function () {
       $(".autocomplete img").attr("src", "images/icons/search.svg");
       $("#empresas").val("");
       showEmpresa(data2);
     });
-    $("#empresas").keydown(function() {
+    $("#empresas").keydown(function () {
       clearTimeout(wto);
       wto = setTimeout(() => {
         if ($(this).val().length > 0) {
@@ -60,7 +56,7 @@ jQuery.get(
         showEmpresa(data2);
       }, 1000);
     });
-    $("#empresas").change(function() {
+    $("#empresas").change(function () {
       clearTimeout(wto);
       wto = setTimeout(() => {
         if ($(this).val().length > 0) {
@@ -74,7 +70,7 @@ jQuery.get(
   }
 );
 
-const carouselItem = data => {
+const carouselItem = (data) => {
   return `
   <div class = "col-12 row noticia-wrapper">
     <div class = "d-none d-sm-block col-sm-7">
@@ -101,7 +97,7 @@ function autocomplete(inp, arr) {
   the text field element and an array of possible autocompleted values:*/
   var currentFocus;
   /*execute a function when someone writes in the text field:*/
-  inp.addEventListener("input", function(e) {
+  inp.addEventListener("input", function (e) {
     var a,
       b,
       i,
@@ -130,7 +126,7 @@ function autocomplete(inp, arr) {
         /*insert a input field that will hold the current array item's value:*/
         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
         /*execute a function when someone clicks on the item value (DIV element):*/
-        b.addEventListener("click", function(e) {
+        b.addEventListener("click", function (e) {
           /*insert the value for the autocomplete text field:*/
           inp.value = this.getElementsByTagName("input")[0].value;
           showEmpresa(arr);
@@ -143,7 +139,7 @@ function autocomplete(inp, arr) {
     }
   });
   /*execute a function presses a key on the keyboard:*/
-  inp.addEventListener("keydown", function(e) {
+  inp.addEventListener("keydown", function (e) {
     var x = document.getElementById(this.id + "autocomplete-list");
     if (x) x = x.getElementsByTagName("div");
     if (e.keyCode == 40) {
@@ -195,16 +191,35 @@ function autocomplete(inp, arr) {
     }
   }
   /*execute a function when someone clicks in the document:*/
-  document.addEventListener("click", function(e) {
+  document.addEventListener("click", function (e) {
     closeAllLists(e.target);
   });
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   var alreadyAnimated = false;
   var myElement = document.getElementById("progress1");
 
   var elementWatcher = scrollMonitor.create(myElement);
+
+  /** Adding put to jquery */
+  jQuery.each(["put", "delete"], function (i, method) {
+    jQuery[method] = function (url, data, callback, type) {
+      if (jQuery.isFunction(data)) {
+        type = type || callback;
+        callback = data;
+        data = undefined;
+      }
+
+      return jQuery.ajax({
+        url: url,
+        type: method,
+        dataType: type,
+        data: data,
+        success: callback,
+      });
+    };
+  });
 
   function animateCircle(el, postfix) {
     var count = $(`#count${el}`);
@@ -213,9 +228,9 @@ $(document).ready(function() {
       {
         duration: 1000,
         easing: "linear",
-        step: function(e) {
+        step: function (e) {
           count.text(Math.ceil(e) + postfix);
-        }
+        },
       }
     );
 
@@ -226,14 +241,14 @@ $(document).ready(function() {
     Snap.animate(
       0,
       251.2,
-      function(value) {
+      function (value) {
         progress.attr({ "stroke-dasharray": value + ",251.2" });
       },
       1000
     );
   }
 
-  elementWatcher.enterViewport(function() {
+  elementWatcher.enterViewport(function () {
     if (!alreadyAnimated) {
       animateCircle(1, "mi");
       animateCircle(2, "mi");
@@ -245,33 +260,84 @@ $(document).ready(function() {
 
   $(".circle").css("height", $(".circle").css("width"));
   $(".circle svg").css("height", $(".circle").css("width"));
-  $("#calculadora-btn").click(function() {
+  $("#calculadora-btn").click(function () {
     $("#modal-calculadora").modal({ backdrop: "static", keyboard: false });
   });
-  $("#empresa-btn").click(function() {
+  $("#empresa-btn").click(function () {
     $("#modal-empresas").modal({ backdrop: "static", keyboard: false });
   });
-  $(".navigation a").click(function(e) {
+  $(".navigation a").click(function (e) {
     e.preventDefault();
     document.querySelector($(e.target).attr("href")).scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
     });
   });
-  $(".form a").click(function(e) {
+
+  function verifyFields(name, number, cpf, phone, mail) {
+    name === ""
+      ? $("#formName").addClass("error")
+      : $("#formName").removeClass("error");
+    phone === ""
+      ? $("#formPhone").addClass("error")
+      : $("#formPhone").removeClass("error");
+    mail === ""
+      ? $("#formMail").addClass("error")
+      : $("#formMail").removeClass("error");
+    return $("input.error").length === 0;
+  }
+
+  $("#formSubmit").on("click", function (e) {
     e.preventDefault();
-    $(".form").addClass("success");
-    setTimeout(() => {
-      $(".form").removeClass("success");
-      setTimeout(() => $(".form").addClass("fail"), 1500);
-    }, 1500);
-  });
-  $(".form").on("mouseenter", function() {
-    $(".soon").css("z-index", 2);
-    $(this).addClass("soon");
-  });
-  $(".form").on("mouseleave", function() {
-    $(this).removeClass("soon");
-    setTimeout(() => $(".soon").css("z-index", 0));
+    const name = $("#formName").val();
+    const number = $("#formNumber").val();
+    const cpf = $("#formCPF").val();
+    const phone = $("#formPhone").val();
+    const mail = $("#formMail").val();
+    if (verifyFields(name, number, cpf, phone, mail)) {
+      var mailData = {
+        dest: "enggabrielalbino@gmail.com",
+        nome: name,
+        codigo: number,
+        requerido: "",
+        assunto: "LOG DE CONSULTA - SITE IPREV",
+        telefone: phone,
+        email: mail,
+        cpf,
+      };
+      var storageData = {
+        nome: name,
+        cpf,
+        email: mail,
+        telefone: phone,
+      };
+      var requestUrl =
+        "https://iprev-281923.rj.r.appspot.com/buscanome?nome=" +
+        encodeURI(name);
+      if (number !== "") {
+        requestUrl =
+          "https://iprev-281923.rj.r.appspot.com/buscacodigo?codigo=" + number;
+      }
+      $.get(requestUrl, function (data) {
+        data.exists ? setFormSuccess() : setFormFail();
+      });
+      console.log(mailData, storageData);
+      $.ajax({
+        url: "https://iprev-281923.rj.r.appspot.com/email/sendmail",
+        type: "POST",
+        data: JSON.stringify(mailData),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {},
+      });
+      $.ajax({
+        url: "https://iprev-281923.rj.r.appspot.com/clientes/insert",
+        type: "PUT",
+        data: JSON.stringify(storageData),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function () {},
+      });
+    }
   });
 });
 
